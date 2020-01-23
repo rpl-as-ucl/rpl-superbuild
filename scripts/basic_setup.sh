@@ -30,6 +30,7 @@ if [ "`lsb_release -cs`" = 'bionic' ]; then
 fi
 
 # ROS config
+sudo apt-get -y --allow-unauthenticated install python-pip
 sudo apt-get -y --allow-unauthenticated install python-rosdep
 sudo rosdep init
 rosdep update
