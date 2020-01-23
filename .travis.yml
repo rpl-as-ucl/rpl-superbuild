@@ -1,0 +1,9 @@
+language: cpp
+compiler: g++
+dist: xenial
+notifications:
+  email:
+    recipients:
+      - d.kanoulas@ucl.ac.uk
+    on_success: never
+    on_failure: always
