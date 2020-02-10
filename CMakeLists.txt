@@ -83,6 +83,12 @@ IF(PANDA)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/panda/CMakeLists.txt)
 ENDIF(PANDA)
 
+# --------------------------------------
+# Compile related SENSORS packages
+# --------------------------------------
+IF(SENSORS)
+       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/sensors/CMakeLists.txt)
+ENDIF(SENSORS)
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
 set_package_properties(Subversion PROPERTIES TYPE RUNTIME)
