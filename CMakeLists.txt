@@ -68,6 +68,13 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "RelWithDebInfo" CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
 endif(NOT CMAKE_BUILD_TYPE)
 
+# Pacakges to build
+# CORE packages
+set(RPL_CORE ON CACHE BOOL "CORE packages for rpl-superbuild")
+# PANDA packages
+set(PANDA_CORE OFF CACHE BOOL "PANDA packages for rpl-superbuild")
+# SENSORS packages
+set(SENSORS_CORE OFF CACHE BOOL "SENSORS packages for rpl-superbuild")
 
 # --------------------------------------
 # Compile related RPL-CORE packages
@@ -77,7 +84,7 @@ IF(RPL-CORE)
 ENDIF(RPL-CORE)
 
 # --------------------------------------
-# Compile related PHOLUS packages
+# Compile related PANDA packages
 # --------------------------------------
 IF(PANDA)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/panda/CMakeLists.txt)
