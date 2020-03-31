@@ -72,7 +72,7 @@ endif(NOT CMAKE_BUILD_TYPE)
 # CORE packages
 set(RPL_CORE ON CACHE BOOL "CORE packages for rpl-superbuild")
 # PANDA packages
-set(PANDA_CORE OFF CACHE BOOL "PANDA packages for rpl-superbuild")
+set(PANDA ON CACHE BOOL "PANDA packages for rpl-superbuild")
 # SENSORS packages
 set(SENSORS_CORE OFF CACHE BOOL "SENSORS packages for rpl-superbuild")
 
@@ -87,7 +87,7 @@ ENDIF(RPL-CORE)
 # Compile related PANDA packages
 # --------------------------------------
 IF(PANDA)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/panda/CMakeLists.txt)
+       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/panda)
 ENDIF(PANDA)
 
 # --------------------------------------
