@@ -10,7 +10,8 @@ Installation instructions can be found under the wiki page: [installation](https
 ```bash
 git clone https://github.com/rpl-as-ucl/panda_simulator.git
 git clone https://github.com/rpl-as-ucl/franka_ros.git
-git clone https://github.com/rpl-as-ucl/panda_moveit_config.git 
+git clone https://github.com/rpl-as-ucl/panda_moveit_config.git
+rosdep install --from-paths src --ignore-src -r -y
 ```
 
 ### RPL Summit-XL Steel in Simulation
@@ -19,4 +20,5 @@ git clone https://github.com/rpl-as-ucl/robotnik_msgs.git
 git clone https://github.com/rpl-as-ucl/robotnik_sensors.git
 git clone https://github.com/rpl-as-ucl/summit_xl_common.git
 git clone https://github.com/rpl-as-ucl/summit_xl_sim.git
+rosdep install --from-paths src --ignore-src -r -y
 ```
