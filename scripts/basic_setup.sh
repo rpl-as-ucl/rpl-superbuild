@@ -17,8 +17,9 @@ sudo apt-get update
 
 if [ "`lsb_release -cs`" = 'xenial' ]; then
         sudo apt-get install ros-kinetic-desktop-full
-	 sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface
+	sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface
         sudo apt-get install ros-kinetic-gazebo-ros-pkgs
+	sudo apt-get install ros-kinetic-combined-robot-hw
 
 fi
 
@@ -26,6 +27,7 @@ if [ "`lsb_release -cs`" = 'bionic' ]; then
         sudo apt-get install ros-melodic-desktop-full
 	 sudo apt-get install ros-melodic-eigen-conversions ros-melodic-kdl-parser ros-melodic-effort-controllers ros-melodic-controller-manager ros-melodic-transmission-interface
         sudo apt-get install ros-melodic-gazebo-ros-pkgs
+	sudo apt-get install ros-melodic-combined-robot-hw
 
 fi
 
